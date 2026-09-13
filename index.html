@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>411 N Washington St — For Sale, Cortez, Colorado</title>
+
+<!--
+  =====================================================================
+  HOW TO EDIT THIS PAGE (no coding required for most of this)
+  =====================================================================
+  Everything you need to change is wrapped in [square brackets] like
+  this: [Property Address]. Just find the bracketed text and type over
+  it — search your text editor for the word "EDIT" to jump to each spot.
+
+  TO SWAP IN REAL PHOTOS:
+    1. Put your photo files in a folder named "photos" next to this
+       HTML file (same folder).
+    2. Find the <img ...> tag for that photo (search for "PHOTO SLOT"),
+       and change src="..." from the placeholder to your file, e.g.
+       src="photos/kitchen.jpg"
+    3. Also update the alt="..." text so it describes the real photo.
+
+  TO CHANGE THE PRICE, ADDRESS, OR CONTACT INFO:
+    Search for "EDIT:" — every line that needs a real value has one
+    of these comments right above it.
+
+  This file is self-contained (one HTML file, no other files required
+  except the photos folder above). Any modern browser can open it —
+  double-click it to preview your changes.
+  =====================================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --sand: #E4DAC0;
+    --paper: #F6F1E3;
+    --ink: #292520;
+    --ink-soft: #5b5546;
+    --juniper: #47533F;
+    --juniper-dark: #363f2f;
+    --clay: #9C5233;
+    --turquoise: #2E8C86;
+    --line: #C6B990;
+    --serif: 'Spectral', Georgia, serif;
+    --sans: 'Work Sans', -apple-system, sans-serif;
+    --mono: 'IBM Plex Mono', 'Courier New', monospace;
+    --max: 1120px;
+  }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
+    *{ animation: none !important; transition: none !important; }
+  }
+
+  body{
+    margin:0;
+    background: var(--sand);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  a{ color: var(--juniper-dark); }
+  a:focus-visible, button:focus-visible{
+    outline: 2px solid var(--turquoise);
+    outline-offset: 3px;
+  }
+
+  .wrap{ max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+
+  h1,h2,h3{ font-family: var(--serif); font-weight: 600; margin: 0; color: var(--ink); }
+  .eyebrow{
+    font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--clay); font-weight: 500;
+  }
+
+  /* ---------- header ---------- */
+  header{
+    position: sticky; top:0; z-index: 50;
+    background: rgba(228,218,192,0.92);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content: space-between;
+    padding: 16px 28px; max-width: var(--max); margin:0 auto; gap: 16px;
+    flex-wrap: wrap;
+  }
+  .wordmark{
+    font-family: var(--mono); font-size: 0.8rem; letter-spacing: 0.08em;
+    text-transform: uppercase; font-weight: 500; color: var(--ink);
+    white-space: nowrap;
+  }
+  .navlinks{ display:flex; gap: 22px; list-style:none; margin:0; padding:0; }
+  .navlinks a{
+    font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.05em;
+    text-transform: uppercase; text-decoration:none; color: var(--ink-soft);
+  }
+  .navlinks a:hover{ color: var(--juniper-dark); }
+  .btn{
+    display:inline-block; font-family: var(--mono); font-size: 0.78rem;
+    letter-spacing: 0.04em; text-transform: uppercase; text-decoration:none;
+    padding: 10px 18px; border-radius: 3px; border: 1px solid var(--juniper);
+    color: var(--paper); background: var(--juniper); white-space:nowrap;
+  }
+  .btn:hover{ background: var(--juniper-dark); border-color: var(--juniper-dark); }
+  .btn.ghost{ background: transparent; color: var(--juniper-dark); }
+  .btn.ghost:hover{ background: var(--juniper); color: var(--paper); }
+
+  /* ---------- hero ---------- */
+  .hero{ position: relative; overflow: hidden; }
+  .hero-art{
+    position: relative;
+    min-height: 68vh;
+    display:flex; align-items:flex-end;
+    background-color: #D8C692;
+    background-size: cover;
+    background-position: 20% 62%;
+    background-repeat: no-repeat;
+  }
+  .hero-art svg{ position:absolute; inset:0; width:100%; height:100%; display:block; }
+  .hero-art.has-photo svg{ display:none; }
+  .hero-scrim{
+    position:absolute; inset:0;
+    background: linear-gradient(180deg, rgba(30,26,20,0.15) 0%, rgba(30,26,20,0.22) 40%, rgba(25,21,16,0.55) 100%);
+  }
+  .hero-copy{
+    position: relative; z-index: 2;
+    max-width: var(--max); margin: 0 auto; width:100%;
+    padding: 48px 28px 56px;
+    color: var(--paper);
+  }
+  .hero-textbox{
+    display: inline-block;
+    max-width: 640px;
+    background: rgba(28,24,18,0.62);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    padding: 30px 34px;
+  }
+  .hero-copy .eyebrow{ color: #EAD9AE; text-shadow: 0 1px 8px rgba(0,0,0,0.4); }
+  .hero-copy h1{
+    font-size: clamp(2rem, 4.6vw, 3.4rem);
+    line-height: 1.08; margin: 12px 0 20px; color: var(--paper);
+  }
+  .hero-facts{
+    display:flex; flex-wrap: wrap; align-items: baseline; gap: 10px 24px;
+    margin-bottom: 28px;
+  }
+  .price{ font-family: var(--serif); font-size: 2rem; font-weight: 600; color: var(--paper); }
+  .facts-list{
+    display:flex; flex-wrap:wrap; gap: 6px 18px; list-style:none; margin:0; padding:0;
+    font-family: var(--mono); font-size: 0.85rem; color: #F0E6C9;
+  }
+  .hero-ctas{ display:flex; gap: 14px; flex-wrap:wrap; margin-top: 4px; }
+  @media (max-width: 560px){
+    .hero-textbox{ padding: 22px 20px; max-width: 100%; }
+  }
+
+  .mesa-divider{ display:block; width:100%; height: 64px; }
+
+  /* ---------- sections ---------- */
+  section{ padding: 88px 0; }
+  section + section{ border-top: 1px solid var(--line); }
+  .section-head{ margin-bottom: 40px; max-width: 60ch; }
+  .section-head h2{ font-size: clamp(1.6rem, 3vw, 2.2rem); margin-top: 8px; }
+  .section-head .eyebrow{ display:block; margin-bottom: 4px; }
+
+  /* ---------- gallery ---------- */
+  /* Column-flow masonry: images keep their natural aspect ratio (no
+     cropping), and this scales cleanly whether there are 6 photos or 60 —
+     just keep adding <figure class="ph"> items, nothing else to adjust. */
+  .gallery{
+    column-count: 3;
+    column-gap: 16px;
+  }
+  @media (max-width: 900px){ .gallery{ column-count: 2; } }
+  @media (max-width: 540px){ .gallery{ column-count: 1; } }
+  figure.ph{
+    margin: 0 0 16px;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+  }
+  .ph img{
+    display:block; width:100%; height:auto;
+    border-radius: 4px; border: 1px solid var(--line);
+    background: #DED0AA;
+  }
+  .ph figcaption{
+    font-family: var(--mono); font-size: 0.72rem; color: var(--ink-soft);
+    margin-top: 6px; letter-spacing: 0.02em;
+  }
+
+  /* ---------- details ---------- */
+  .details-grid{
+    display:grid; grid-template-columns: 1.4fr 1fr; gap: 56px;
+  }
+  @media (max-width: 800px){ .details-grid{ grid-template-columns: 1fr; gap: 40px; } }
+  .about p{ color: var(--ink); margin: 0 0 16px; }
+  .about p.placeholder-text{ color: var(--ink-soft); font-style: italic; }
+
+  .specs{
+    background: var(--paper); border: 1px solid var(--line); border-radius: 6px;
+    padding: 24px 26px;
+  }
+  .specs h3{ font-family: var(--mono); font-size: 0.78rem; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--clay); margin-bottom: 16px; }
+  .specs dl{ margin:0; display:grid; grid-template-columns: 1fr auto; row-gap: 10px; }
+  .specs dt{ font-family: var(--mono); font-size: 0.85rem; color: var(--ink-soft); }
+  .specs dd{ margin:0; font-family: var(--mono); font-size: 0.85rem; text-align:right; color: var(--ink); }
+  .specs dl > div{ display: contents; }
+  .specs .row{ display:flex; justify-content: space-between; padding: 9px 0; border-bottom: 1px dashed var(--line); }
+  .specs .row:last-child{ border-bottom:none; }
+
+  .features{
+    margin-top: 56px; display:grid; grid-template-columns: repeat(3, 1fr); gap: 14px 28px;
+  }
+  @media (max-width: 720px){ .features{ grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 460px){ .features{ grid-template-columns: 1fr; } }
+  .feature{ display:flex; gap: 10px; align-items:flex-start; font-size: 0.95rem; }
+  .feature svg{ flex: none; width:18px; height:18px; margin-top:3px; color: var(--turquoise); }
+
+  /* ---------- location ---------- */
+  .location-grid{ display:grid; grid-template-columns: 1.3fr 1fr; gap: 56px; align-items:start; }
+  @media (max-width: 800px){ .location-grid{ grid-template-columns: 1fr; gap: 32px; } }
+  .distances{ list-style:none; margin:0; padding:0; font-family: var(--mono); font-size: 0.88rem; }
+  .distances li{ display:flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px dashed var(--line); }
+  .distances li:last-child{ border-bottom:none; }
+  .distances span:last-child{ color: var(--ink-soft); }
+
+  /* ---------- contact ---------- */
+  .contact-wrap{
+    background: var(--juniper); color: var(--paper); border-radius: 10px;
+    padding: 52px 44px; display:grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items:center;
+  }
+  @media (max-width: 760px){ .contact-wrap{ grid-template-columns: 1fr; padding: 40px 26px; } }
+  .contact-wrap h2{ color: var(--paper); font-size: clamp(1.5rem, 3vw, 2rem); }
+  .contact-wrap .eyebrow{ color: #CFE0C8; }
+  .contact-wrap p{ color: #E7EEE0; max-width: 44ch; }
+  .contact-card{ background: rgba(246,241,227,0.08); border: 1px solid rgba(246,241,227,0.35);
+    border-radius: 8px; padding: 26px; }
+  .contact-card dl{ margin:0 0 20px; }
+  .contact-card .row{ display:flex; flex-direction:column; gap: 2px; margin-bottom: 14px; }
+  .contact-card .row:last-of-type{ margin-bottom: 22px; }
+  .contact-card dt{ font-family: var(--mono); font-size: 0.68rem; text-transform: uppercase;
+    letter-spacing: 0.08em; color: #B9CBAF; }
+  .contact-card dd{ margin:0; font-family: var(--serif); font-size: 1.15rem; }
+  .contact-card a{ color: var(--paper); }
+  .contact-card .btn{ width:100%; text-align:center; background: var(--paper); color: var(--juniper-dark);
+    border-color: var(--paper); }
+  .contact-card .btn:hover{ background: #fff; }
+
+  /* ---------- footer ---------- */
+  footer{ padding: 36px 0 56px; }
+  footer .wrap{ display:flex; justify-content: space-between; flex-wrap:wrap; gap: 10px 24px; }
+  footer p{ margin:0; font-family: var(--mono); font-size: 0.75rem; color: var(--ink-soft); }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <!-- EDIT: replace with the property name/address you want in the header -->
+    <span class="wordmark">411 N Washington St · Cortez, CO</span>
+    <ul class="navlinks">
+      <li><a href="#details">Details</a></li>
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn" href="#contact">Inquire</a>
+  </nav>
+</header>
+
+<main>
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <!-- Hero photo: this is set as a CSS background-image below so the
+         headline text can sit on top of it. To swap in a different photo,
+         change the url('photos/exterior-front-porch.jpg') path. If you'd
+         rather go back to the plain illustrated version, remove the
+         "has-photo" class and the background-image, and the mesa-horizon
+         SVG underneath will show again automatically. -->
+    <div class="hero-art has-photo" style="background-image: url('photos/exterior-front-porch.jpg');">
+      <svg viewBox="0 0 1200 500" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#EFE6CC"/>
+            <stop offset="100%" stop-color="#D8C692"/>
+          </linearGradient>
+        </defs>
+        <rect width="1200" height="500" fill="url(#sky)"/>
+        <circle cx="960" cy="120" r="70" fill="#F6F1E3" opacity="0.55"/>
+        <path d="M0,340 L120,340 L170,270 L230,270 L270,230 L420,230 L460,270 L620,270 L660,300 L1200,300 L1200,500 L0,500 Z" fill="#8B9B7E" opacity="0.55"/>
+        <path d="M0,400 L90,400 L140,350 L340,350 L390,390 L560,390 L610,340 L980,340 L1030,380 L1200,380 L1200,500 L0,500 Z" fill="#5C6B4F" opacity="0.7"/>
+        <path d="M0,450 L260,450 L310,410 L540,410 L590,450 L830,450 L870,420 L1200,420 L1200,500 L0,500 Z" fill="#3B4632"/>
+      </svg>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <div class="hero-textbox">
+        <span class="eyebrow">For sale by owner — Cortez, Colorado</span>
+        <!-- EDIT: property address or a short name for the place -->
+        <h1>411 N Washington St<br>Cortez, Colorado</h1>
+        <div class="hero-facts">
+          <!-- EDIT: asking price -->
+          <span class="price">$275,500</span>
+          <ul class="facts-list">
+            <li>2 bed</li>
+            <li>2 bath</li>
+            <li>976 sq ft</li>
+            <li>7,100 sq ft lot</li>
+          </ul>
+        </div>
+        <div class="hero-ctas">
+          <a class="btn" href="#photos">View photos</a>
+          <a class="btn ghost" style="border-color:#E9D9B8; color:#F6F1E3;" href="#contact">Contact us</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DETAILS ================= -->
+  <section id="details">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Details</span>
+        <h2>About this property</h2>
+      </div>
+
+      <div class="details-grid">
+        <div class="about">
+          <!-- First paragraph below is Daniel's own text — keep as is.
+               The next two paragraphs and the feature list are AI-drafted
+               placeholders standing in until real copy is ready — read
+               them over and edit or replace freely. -->
+          <p>Cozy cottage on a sunny lot walkable to downtown Cortez, this well maintained house is a great home in Montezuma County. There are two spacious bedrooms and two full baths, a kitchen with a large window, and a comfortable living space. The property has a small shed on its expansive lot.</p>
+          <p class="placeholder-text">[DRAFT — edit or replace] Inside, the layout is simple and easy to live in: the kitchen opens onto the main living area, and the two bedrooms sit toward the back of the house for some quiet distance from the street. The shed out back adds extra storage or workshop space beyond the house's own footprint.</p>
+          <p class="placeholder-text">[DRAFT — edit or replace] The home was remodeled in 2008 and has been well kept since. Mature shade trees and a covered front porch make for an easy spot to sit outside, and there's a hot tub with its own covered spot in the yard. It's a short walk into downtown Cortez from here. Reach out to Chris Barber to schedule a showing.</p>
+
+          <div class="features">
+            <!-- EDIT: swap these for the property's real features -->
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg>
+              Walkable to downtown Cortez
+            </div>
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg>
+              Kitchen with a large window
+            </div>
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg>
+              Storage shed on the lot
+            </div>
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg>
+              Remodeled in 2008
+            </div>
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg>
+              Covered front porch
+            </div>
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg>
+              Mature shade trees
+            </div>
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg>
+              Hot tub
+            </div>
+          </div>
+        </div>
+
+        <aside class="specs">
+          <h3>At a glance</h3>
+          <!-- EDIT: fill in the remaining real numbers -->
+          <div class="row"><span>Bedrooms</span><span>2</span></div>
+          <div class="row"><span>Bathrooms</span><span>2 full</span></div>
+          <div class="row"><span>Interior</span><span>976 sq ft</span></div>
+          <div class="row"><span>Lot size</span><span>7,100 sq ft</span></div>
+          <div class="row"><span>Year built</span><span>1963</span></div>
+          <div class="row"><span>Remodeled</span><span>2008</span></div>
+          <div class="row"><span>Heating</span><span>[Type]</span></div>
+          <div class="row"><span>Water</span><span>[Well / municipal]</span></div>
+          <div class="row"><span>Taxes (est.)</span><span>$[____] / yr</span></div>
+          <div class="row"><span>Parcel #</span><span>[Montezuma Co. #]</span></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY ================= -->
+  <section id="photos">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Photos</span>
+        <h2>A look around the property</h2>
+      </div>
+
+      <!-- PHOTOS — each <figure> is one photo, shown full-frame at its own
+           natural size (nothing here crops or resizes to fit a slot). To
+           add more, just copy a <figure class="ph">...</figure> block —
+           the layout flows to fit however many there are. To use a real
+           photo, change the src="..." to your file (e.g.
+           src="photos/kitchen.jpg") and update the alt text and caption. -->
+      <div class="gallery">
+        <figure class="ph">
+          <img src="photos/exterior-front-porch.jpg" alt="Front exterior of the house with covered porch">
+          <figcaption>Exterior / front of house</figcaption>
+        </figure>
+        <figure class="ph">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23DED0AA'/%3E%3Cpath d='M0 220 L90 150 L160 200 L240 120 L400 210 L400 300 L0 300 Z' fill='%23C7B77F'/%3E%3Ccircle cx='320' cy='70' r='28' fill='%23E9DCB4'/%3E%3C/svg%3E" alt="Placeholder — kitchen photo">
+          <figcaption>Kitchen</figcaption>
+        </figure>
+        <figure class="ph">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23DED0AA'/%3E%3Cpath d='M0 220 L90 150 L160 200 L240 120 L400 210 L400 300 L0 300 Z' fill='%23C7B77F'/%3E%3Ccircle cx='320' cy='70' r='28' fill='%23E9DCB4'/%3E%3C/svg%3E" alt="Placeholder — living room photo">
+          <figcaption>Living room</figcaption>
+        </figure>
+        <figure class="ph">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23DED0AA'/%3E%3Cpath d='M0 220 L90 150 L160 200 L240 120 L400 210 L400 300 L0 300 Z' fill='%23C7B77F'/%3E%3Ccircle cx='320' cy='70' r='28' fill='%23E9DCB4'/%3E%3C/svg%3E" alt="Placeholder — bedroom photo">
+          <figcaption>Primary bedroom</figcaption>
+        </figure>
+        <figure class="ph">
+          <img src="photos/bathroom.jpg" alt="Bathroom with tub and shower">
+          <figcaption>Bathroom</figcaption>
+        </figure>
+        <figure class="ph">
+          <img src="photos/shed-hot-tub.jpg" alt="Shed and hot tub in the backyard">
+          <figcaption>Shed and hot tub</figcaption>
+        </figure>
+        <figure class="ph">
+          <img src="photos/lot-aerial.jpg" alt="Aerial view of the property and lot">
+          <figcaption>Aerial view of the lot</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LOCATION ================= -->
+  <section id="location">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Location</span>
+        <h2>Cortez, Colorado</h2>
+      </div>
+
+      <div class="location-grid">
+        <div class="about">
+          <p>Cortez sits in the high desert of southwest Colorado, in Montezuma County — mesa-and-canyon country at around 6,200 feet. It's the closest town to Mesa Verde National Park, and sits within the wider Four Corners region, near the Ute Mountain and Canyons of the Ancients areas. Durango is roughly an hour's drive east over the mountains.</p>
+          <p class="placeholder-text">[Add a paragraph here on the specific neighborhood — what's within walking or driving distance of this particular property, road access, views, nearby land use, etc.]</p>
+        </div>
+        <div>
+          <ul class="distances">
+            <!-- Downtown and CEZ distances below are estimates based on the
+                 address, not a routed measurement — good enough for a
+                 listing, but sanity-check them if you want exact figures. -->
+            <li><span>Downtown Cortez</span><span>~0.3 mi</span></li>
+            <li><span>Mesa Verde National Park entrance</span><span>~10 mi</span></li>
+            <li><span>Durango</span><span>~45 mi</span></li>
+            <li><span>Four Corners Monument</span><span>~40 mi</span></li>
+            <li><span>Cortez Municipal Airport (CEZ)</span><span>~4 mi</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-wrap">
+        <div>
+          <span class="eyebrow">Contact</span>
+          <h2>Interested in this property?</h2>
+          <p>This home is being sold directly by the family — no agent, no listing commission. Reach out to schedule a showing or ask a question.</p>
+        </div>
+        <div class="contact-card">
+          <dl>
+            <!-- EDIT: real contact details -->
+            <div class="row">
+              <dt>Contact</dt>
+              <dd>Chris Barber</dd>
+            </div>
+            <!-- No phone number yet — add one back like this when ready:
+            <div class="row">
+              <dt>Phone</dt>
+              <dd><a href="tel:+1XXXXXXXXXX">(___) ___-____</a></dd>
+            </div>
+            -->
+            <div class="row">
+              <dt>Email</dt>
+              <dd><a href="mailto:estateofKeb@icloud.com">estateofKeb@icloud.com</a></dd>
+            </div>
+          </dl>
+          <a class="btn" href="mailto:estateofKeb@icloud.com?subject=Inquiry%20about%20411%20N%20Washington%20St">Email about this property</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <!-- EDIT: adjust or remove this disclaimer as needed -->
+    <p>[Property sold as-is. Shown by appointment. All information deemed reliable but not guaranteed — buyer to verify.]</p>
+    <p>© [Year] — For sale by owner.</p>
+  </div>
+</footer>
+
+</body>
+</html>
