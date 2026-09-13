@@ -181,23 +181,23 @@
      just keep adding <figure class="ph"> items, nothing else to adjust. */
   .gallery{
     column-count: 3;
-    column-gap: 16px;
+    column-gap: 28px;
   }
-  @media (max-width: 900px){ .gallery{ column-count: 2; } }
+  @media (max-width: 900px){ .gallery{ column-count: 2; column-gap: 20px; } }
   @media (max-width: 540px){ .gallery{ column-count: 1; } }
   figure.ph{
-    margin: 0 0 16px;
+    margin: 0 0 28px;
     break-inside: avoid;
     -webkit-column-break-inside: avoid;
   }
   .ph img{
     display:block; width:100%; height:auto;
-    border-radius: 4px; border: 1px solid var(--line);
+    border-radius: 3px;
     background: #DED0AA;
   }
   .ph figcaption{
-    font-family: var(--mono); font-size: 0.72rem; color: var(--ink-soft);
-    margin-top: 6px; letter-spacing: 0.02em;
+    font-family: var(--mono); font-size: 0.7rem; color: var(--ink-soft);
+    margin-top: 8px; letter-spacing: 0.02em;
   }
 
   /* ---------- details ---------- */
@@ -339,13 +339,11 @@
 
       <div class="details-grid">
         <div class="about">
-          <!-- First paragraph below is Daniel's own text — keep as is.
-               The next two paragraphs and the feature list are AI-drafted
-               placeholders standing in until real copy is ready — read
-               them over and edit or replace freely. -->
+          <!-- First paragraph is Daniel's own text. The next two were
+               AI-drafted and have since been finalized — edit any time. -->
           <p>Cozy cottage on a sunny lot walkable to downtown Cortez, this well maintained house is a great home in Montezuma County. There are two spacious bedrooms and two full baths, a kitchen with a large window, and a comfortable living space. The property has a small shed on its expansive lot.</p>
-          <p class="placeholder-text">[DRAFT — edit or replace] Inside, the layout is simple and easy to live in: the kitchen opens onto the main living area, and the two bedrooms sit toward the back of the house for some quiet distance from the street. The shed out back adds extra storage or workshop space beyond the house's own footprint.</p>
-          <p class="placeholder-text">[DRAFT — edit or replace] The home was remodeled in 2008 and has been well kept since. Mature shade trees and a covered front porch make for an easy spot to sit outside, and there's a hot tub with its own covered spot in the yard. It's a short walk into downtown Cortez from here. Reach out to Chris Barber to schedule a showing.</p>
+          <p>Inside, the layout is simple and easy to live in: the kitchen opens onto the main living area, and the two bedrooms sit toward the back of the house for some quiet distance from the street. The shed out back adds extra storage or workshop space beyond the house's own footprint.</p>
+          <p>The home was remodeled in 2008 and has been well kept since. Mature shade trees and a covered front porch make for an easy spot to sit outside, and it's a short walk into downtown Cortez from here. Reach out to <a href="mailto:estateofKeb@icloud.com">Chris Barber</a> to schedule a showing.</p>
 
           <div class="features">
             <!-- EDIT: swap these for the property's real features -->
@@ -372,10 +370,6 @@
             <div class="feature">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg>
               Mature shade trees
-            </div>
-            <div class="feature">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg>
-              Hot tub
             </div>
           </div>
         </div>
@@ -426,16 +420,24 @@
           <figcaption>Living room</figcaption>
         </figure>
         <figure class="ph">
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23DED0AA'/%3E%3Cpath d='M0 220 L90 150 L160 200 L240 120 L400 210 L400 300 L0 300 Z' fill='%23C7B77F'/%3E%3Ccircle cx='320' cy='70' r='28' fill='%23E9DCB4'/%3E%3C/svg%3E" alt="Placeholder — bedroom photo">
+          <img src="photos/bedroom-bed.jpg" alt="Primary bedroom with bed">
           <figcaption>Primary bedroom</figcaption>
+        </figure>
+        <figure class="ph">
+          <img src="photos/bedroom-dresser.jpg" alt="Primary bedroom, dresser and shelving">
+          <figcaption>Primary bedroom</figcaption>
+        </figure>
+        <figure class="ph">
+          <img src="photos/bedroom-patio-door.jpg" alt="Primary bedroom with sliding door to the backyard">
+          <figcaption>Primary bedroom, patio access</figcaption>
         </figure>
         <figure class="ph">
           <img src="photos/bathroom.jpg" alt="Bathroom with tub and shower">
           <figcaption>Bathroom</figcaption>
         </figure>
         <figure class="ph">
-          <img src="photos/shed-hot-tub.jpg" alt="Shed and hot tub in the backyard">
-          <figcaption>Shed and hot tub</figcaption>
+          <img src="photos/bathroom-2.jpg" alt="Second bathroom with tub and shower">
+          <figcaption>Second bathroom</figcaption>
         </figure>
         <figure class="ph">
           <img src="photos/lot-aerial.jpg" alt="Aerial view of the property and lot">
