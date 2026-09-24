@@ -9,17 +9,27 @@
   =====================================================================
   HOW TO EDIT THIS PAGE (no coding required for most of this)
   =====================================================================
-  Everything you need to change is wrapped in [square brackets] like
-  this: [Property Address]. Just find the bracketed text and type over
-  it — search your text editor for the word "EDIT" to jump to each spot.
+  Everything you still need to fill in is wrapped in [square brackets]
+  like this: [Type]. Search your text editor for the word "EDIT" to
+  jump to each remaining spot (heating type, water source, taxes,
+  parcel number, and one paragraph in the Location section).
 
-  TO SWAP IN REAL PHOTOS:
-    1. Put your photo files in a folder named "photos" next to this
-       HTML file (same folder).
-    2. Find the <img ...> tag for that photo (search for "PHOTO SLOT"),
-       and change src="..." from the placeholder to your file, e.g.
+  TO ADD OR SWAP PHOTOS:
+    1. Put your photo file in the "photos" folder next to this HTML
+       file (same folder).
+    2. In the <div class="gallery"> block, copy one whole
+       <figure class="ph">...</figure> block, paste it where you want
+       the new photo, and change its src="..." to your file, e.g.
        src="photos/kitchen.jpg"
-    3. Also update the alt="..." text so it describes the real photo.
+    3. Update the alt="..." text and the <figcaption> to describe it.
+    4. To remove a photo, just delete its whole <figure> block. The
+       layout re-flows automatically — no slot count to manage.
+
+  TO ADD THE WALKTHROUGH VIDEO:
+    Put your video file at videos/walkthrough.mp4 — a folder named
+    "videos" next to this HTML file, same level as "photos". The
+    filename has to match exactly (videos/walkthrough.mp4) or update
+    the src="..." in the VIDEO section to match your filename instead.
 
   TO CHANGE THE PRICE, ADDRESS, OR CONTACT INFO:
     Search for "EDIT:" — every line that needs a real value has one
@@ -175,6 +185,16 @@
   .section-head h2{ font-size: clamp(1.6rem, 3vw, 2.2rem); margin-top: 8px; }
   .section-head .eyebrow{ display:block; margin-bottom: 4px; }
 
+  /* ---------- video ---------- */
+  .video-frame{
+    max-width: 780px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: #000;
+  }
+  .video-frame video{ display:block; width:100%; height:auto; }
+
   /* ---------- gallery ---------- */
   /* Column-flow masonry: images keep their natural aspect ratio (no
      cropping), and this scales cleanly whether there are 6 photos or 60 —
@@ -273,6 +293,7 @@
     <span class="wordmark">411 N Washington St · Cortez, CO</span>
     <ul class="navlinks">
       <li><a href="#details">Details</a></li>
+      <li><a href="#video">Video</a></li>
       <li><a href="#photos">Photos</a></li>
       <li><a href="#location">Location</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -341,7 +362,7 @@
         <div class="about">
           <!-- First paragraph is Daniel's own text. The next two were
                AI-drafted and have since been finalized — edit any time. -->
-          <p>Cozy cottage on a sunny lot walkable to downtown Cortez, this well maintained house is a great home in Montezuma County. There are two spacious bedrooms and two full baths, a kitchen with a large window, and a comfortable living space. The property has a small shed on its expansive lot.</p>
+          <p>Cozy cottage on a sunny lot walkable to downtown Cortez, this well-maintained house is a great home in Montezuma County. There are two spacious bedrooms and two full baths, a kitchen with a large window, and a comfortable living space. The property has a small shed on its expansive lot.</p>
           <p>Inside, the layout is simple and easy to live in: the kitchen opens onto the main living area, and the two bedrooms sit toward the back of the house for some quiet distance from the street. The shed out back adds extra storage or workshop space beyond the house's own footprint.</p>
           <p>The home was remodeled in 2008 and has been well kept since. Mature shade trees and a covered front porch make for an easy spot to sit outside, and it's a short walk into downtown Cortez from here. Reach out to <a href="mailto:estateofKeb@icloud.com">Chris Barber</a> to schedule a showing.</p>
 
@@ -392,6 +413,26 @@
     </div>
   </section>
 
+  <!-- ================= VIDEO ================= -->
+  <section id="video">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Walkthrough</span>
+        <h2>See it in motion</h2>
+      </div>
+      <!-- Put your video file at videos/walkthrough.mp4 (a "videos" folder
+           next to this HTML file, same level as "photos"). Any modern
+           browser plays mp4 natively — nothing else to configure. -->
+      <div class="video-frame">
+        <video controls preload="metadata" poster="photos/exterior-front-porch.jpg">
+          <source src="videos/walkthrough.mp4" type="video/mp4">
+          Your browser doesn't support embedded video.
+          <a href="videos/walkthrough.mp4">Download the video</a> instead.
+        </video>
+      </div>
+    </div>
+  </section>
+
   <!-- ================= GALLERY ================= -->
   <section id="photos">
     <div class="wrap">
@@ -429,7 +470,7 @@
         </figure>
         <figure class="ph">
           <img src="photos/bedroom-dresser.jpg" alt="Primary bedroom, dresser and shelving">
-          <figcaption>Primary bedroom</figcaption>
+          <figcaption>Primary bedroom, dresser</figcaption>
         </figure>
         <figure class="ph">
           <img src="photos/bedroom-patio-door.jpg" alt="Primary bedroom with sliding door to the backyard">
@@ -466,7 +507,7 @@
       <div class="location-grid">
         <div class="about">
           <p>Cortez sits in the high desert of southwest Colorado, in Montezuma County — mesa-and-canyon country at around 6,200 feet. It's the closest town to Mesa Verde National Park, and sits within the wider Four Corners region, near the Ute Mountain and Canyons of the Ancients areas. Durango is roughly an hour's drive east over the mountains.</p>
-          <p class="placeholder-text">[Add a paragraph here on the specific neighborhood — what's within walking or driving distance of this particular property, road access, views, nearby land use, etc.]</p>
+          <p>The block is a quiet, established residential street a short walk from downtown, with mature trees on the property and a gravel driveway leading back to the house.</p>
         </div>
         <div>
           <ul class="distances">
@@ -522,7 +563,7 @@
   <div class="wrap">
     <!-- EDIT: adjust or remove this disclaimer as needed -->
     <p>[Property sold as-is. Shown by appointment. All information deemed reliable but not guaranteed — buyer to verify.]</p>
-    <p>© [Year] — For sale by owner.</p>
+    <p>© 2026 — For sale by owner.</p>
   </div>
 </footer>
 
